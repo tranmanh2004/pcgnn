@@ -111,7 +111,7 @@ def experiment_105a():
             AStarDiversityMetric(proper_game, parent),
             AStarDifficultyMetric(proper_game, parent),
             AStarEditDistanceDiversityMetric(proper_game, parent),
-        ], log_to_wandb=True, verbose=Verbosity.PROGRESS if seed == 0 else Verbosity.NONE)
+        ], log_to_wandb=False, verbose=Verbosity.PROGRESS if seed == 0 else Verbosity.NONE)
 
         experiment.do_all()
         wandb.finish()
