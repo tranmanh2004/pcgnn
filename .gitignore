@@ -27,3 +27,8 @@ doc/*.fls
 **/wandb/
 .history
 **/*smb_turtle*/**/*.pkl
+
+# Researcher lab — local-only experiment state
+.lab/
+run.log
+

@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:www.michaelbeukman.com)"
+      "WebFetch(domain:www.michaelbeukman.com)",
+      "Bash(git checkout *)",
+      "Bash(python -c \"import neat, numpy; print\\('neat:', neat.__version__ if hasattr\\(neat, '__version__'\\) else 'ok'\\); print\\('numpy:', numpy.__version__\\)\")",
+      "Bash(conda env *)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe -c \"import neat, numpy; print\\('numpy:', numpy.__version__\\); print\\('neat OK'\\)\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_experiment.py 0)",
+      "Bash(tee .lab/workspace/exp-0/run.log)"
     ]
   }
 }
