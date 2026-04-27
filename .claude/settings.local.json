@@ -8,7 +8,32 @@
       "Bash(conda env *)",
       "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe -c \"import neat, numpy; print\\('numpy:', numpy.__version__\\); print\\('neat OK'\\)\")",
       "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_experiment.py 0)",
-      "Bash(tee .lab/workspace/exp-0/run.log)"
+      "Bash(tee .lab/workspace/exp-0/run.log)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/gen_100_maps.py)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/eval_100_maps.py)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/*.py)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/*.py *)",
+      "Bash(cat .lab/*)",
+      "Bash(cat .lab/workspace/*)",
+      "Bash(ls .lab/*)",
+      "Bash(ls -la .lab/*)",
+      "Bash(tail .lab/workspace/*)",
+      "Bash(tail -n * .lab/workspace/*)",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe -c ' *)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME1\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME1 .lab/workspace/expme-ME1)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME2\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME2 .lab/workspace/expme-ME2)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME3\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME3 .lab/workspace/expme-ME3)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME0v3\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME0 .lab/workspace/expme-ME0v3)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME1v3\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME1 .lab/workspace/expme-ME1v3)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME2v3\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME2 .lab/workspace/expme-ME2v3)",
+      "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME3v3\")",
+      "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME3 .lab/workspace/expme-ME3v3)"
     ]
   }
 }
