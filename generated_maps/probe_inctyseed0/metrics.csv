@@ -1,0 +1,6 @@
+file,has_player,has_enemy,solvable,wall_ratio,interior_wall_density,walkable_cells,reachable_ratio,shortest_path_length,path_norm,dead_end_ratio,branching_ratio,leniency,astar_difficulty,difficulty_score
+pcgnn_000.txt,False,False,False,1.0,1.0,0,0.0,0,0.0,0.0,0.0,0.0,1.0,0.44999999999999996
+pcgnn_001.txt,False,False,False,1.0,1.0,0,0.0,0,0.0,0.0,0.0,0.0,1.0,0.44999999999999996
+pcgnn_002.txt,False,False,False,1.0,1.0,0,0.0,0,0.0,0.0,0.0,0.0,1.0,0.44999999999999996
+pcgnn_003.txt,False,False,False,1.0,1.0,0,0.0,0,0.0,0.0,0.0,0.0,1.0,0.44999999999999996
+pcgnn_004.txt,False,False,False,1.0,1.0,0,0.0,0,0.0,0.0,0.0,0.0,1.0,0.44999999999999996
