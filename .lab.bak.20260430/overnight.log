@@ -1,0 +1,22 @@
+[2026-04-27 03:06:41] === OVERNIGHT RUN START — 8 variants ===
+[2026-04-27 03:06:41] >>> Starting variant V0
+[2026-04-27 03:28:58] <<< V0 OK in 1337s
+[2026-04-27 03:28:58] >>> Starting variant V1
+[2026-04-27 03:55:04] <<< V1 OK in 1566s
+[2026-04-27 03:55:04] >>> Starting variant V2
+[2026-04-27 04:16:23] <<< V2 OK in 1279s
+[2026-04-27 04:16:23] >>> Starting variant V3
+[2026-04-27 04:40:03] <<< V3 OK in 1420s
+[2026-04-27 04:40:03] >>> Starting variant V4
+[2026-04-27 05:06:43] <<< V4 OK in 1599s
+[2026-04-27 05:06:43] >>> Starting variant V5
+[2026-04-27 05:33:32] <<< V5 OK in 1609s
+[2026-04-27 05:33:32] >>> Starting variant V6
+[2026-04-27 05:56:40] <<< V6 OK in 1388s
+[2026-04-27 05:56:40] >>> Starting variant V7
+[2026-04-27 06:28:14] <<< V7 OK in 1894s
+[2026-04-27 06:28:14] All variants complete in 201.5 minutes
+[2026-04-27 06:28:14] Aggregating results...
+[2026-04-27 06:28:15] Comparison image: D:\Project\PCGNN\.lab\overnight_comparison.png
+[2026-04-27 06:28:15] Report: D:\Project\PCGNN\.lab\overnight_summary.md
+[2026-04-27 06:28:15] === OVERNIGHT RUN END ===

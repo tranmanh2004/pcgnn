@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.25,
+  "solvability": 0.97,
+  "L_pattern_count": 72,
+  "unsolvable_count": 3,
+  "diagonal_stripes_count": 21,
+  "near_empty_count": 3,
+  "near_full_count": 26,
+  "astar_diff_mean": 0.28538970107285766,
+  "astar_div_pairs_mean": 0.16028571428571425,
+  "wall_density_mean": 0.5614583333333334,
+  "wall_density_std": 0.20951833126067815,
+  "diag_score_mean": 0.2283866360358964,
+  "turns_histogram": [
+    0,
+    72,
+    6,
+    2,
+    3,
+    3,
+    8,
+    0,
+    3,
+    3
+  ],
+  "variant_id": "V6",
+  "exp_id": "ovn",
+  "description": "Best-of-both: reduce turns weight to 4 (2x), add combined penalty",
+  "train_seconds": 1387.7382397651672
+}

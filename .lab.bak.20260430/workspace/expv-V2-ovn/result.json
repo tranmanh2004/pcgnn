@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.69,
+  "solvability": 0.69,
+  "L_pattern_count": 0,
+  "unsolvable_count": 31,
+  "diagonal_stripes_count": 100,
+  "near_empty_count": 9,
+  "near_full_count": 0,
+  "astar_diff_mean": 0.3576150547444,
+  "astar_div_pairs_mean": 0.15657142857142856,
+  "wall_density_mean": 0.2858333333333333,
+  "wall_density_std": 0.10286557811286448,
+  "diag_score_mean": 0.7959437879084743,
+  "turns_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    69,
+    31
+  ],
+  "variant_id": "V2",
+  "exp_id": "ovn",
+  "description": "BC + density-extreme penalty in fitness",
+  "train_seconds": 1278.2831275463104
+}

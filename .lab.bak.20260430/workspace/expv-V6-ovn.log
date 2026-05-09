@@ -1,0 +1,13 @@
+[V6] Best-of-both: reduce turns weight to 4 (2x), add combined penalty
+[V6] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 4.0]
+[V6] Penalty = combined × 0.3
+[V6] training 30 gen × 50 pop × 8 maps...
+[V6] training done in 1387.7s
+
+[V6] non_l_pattern_rate    = 0.2500
+[V6] solvability           = 0.9700
+[V6] diagonal_stripes_pct  = 21/100
+[V6] near_empty_pct        = 3/100
+[V6] near_full_pct         = 26/100
+[V6] astar_div_pairs_mean  = 0.1603
+[V6] astar_diff_mean       = 0.2854

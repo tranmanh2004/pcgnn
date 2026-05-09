@@ -1,0 +1,13 @@
+[V2] BC + density-extreme penalty in fitness
+[V2] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 7.84]
+[V2] Penalty = density × 0.3
+[V2] training 30 gen × 50 pop × 8 maps...
+[V2] training done in 1278.3s
+
+[V2] non_l_pattern_rate    = 0.6900
+[V2] solvability           = 0.6900
+[V2] diagonal_stripes_pct  = 100/100
+[V2] near_empty_pct        = 9/100
+[V2] near_full_pct         = 0/100
+[V2] astar_div_pairs_mean  = 0.1566
+[V2] astar_diff_mean       = 0.3576

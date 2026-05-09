@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.29,
+  "solvability": 1.0,
+  "L_pattern_count": 71,
+  "unsolvable_count": 0,
+  "diagonal_stripes_count": 9,
+  "near_empty_count": 2,
+  "near_full_count": 14,
+  "astar_diff_mean": 0.4508233275188055,
+  "astar_div_pairs_mean": 0.11238095238095237,
+  "wall_density_mean": 0.5242361111111111,
+  "wall_density_std": 0.13828861601536277,
+  "diag_score_mean": 0.12838766363694532,
+  "turns_histogram": [
+    0,
+    71,
+    9,
+    4,
+    6,
+    3,
+    3,
+    0,
+    4,
+    0
+  ],
+  "variant_id": "V11",
+  "exp_id": "phase2",
+  "description": "Inverted: turns weight 1x + combined penalty (low BC pressure)",
+  "train_seconds": 1347.6440579891205
+}

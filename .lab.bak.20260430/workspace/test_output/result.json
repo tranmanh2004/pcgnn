@@ -1,0 +1,36 @@
+{
+  "non_l_pattern_rate": 0.74,
+  "solvability": 0.92,
+  "astar_div": 0.21889407191448007,
+  "astar_diff": 0.5772479145475612,
+  "turns_distribution": {
+    "mean": 8.891304347826088,
+    "histogram": [
+      0,
+      9,
+      2,
+      6,
+      5,
+      0,
+      2,
+      3,
+      19,
+      4
+    ],
+    "histogram_labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "\u22658",
+      "unsolvable"
+    ]
+  },
+  "pkl_file": "neat_winner_seed0 (1).pkl",
+  "seed": 42,
+  "n_maps": 50
+}

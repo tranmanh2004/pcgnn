@@ -1,0 +1,6 @@
+[exp-2] training 30 gen × 50 pop × 8 maps/genome ...
+[exp-2] training done in 1372.9s
+[exp-2] non_l_pattern_rate = 0.5600
+[exp-2] solvability        = 0.5600
+[exp-2] astar_div          = 0.2481
+[exp-2] astar_diff         = 0.3486

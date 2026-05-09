@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.21,
+  "solvability": 0.99,
+  "L_pattern_count": 78,
+  "unsolvable_count": 1,
+  "diagonal_stripes_count": 4,
+  "near_empty_count": 55,
+  "near_full_count": 4,
+  "astar_diff_mean": 0.751491099562195,
+  "astar_div_pairs_mean": 0.1617142857142857,
+  "wall_density_mean": 0.21256944444444448,
+  "wall_density_std": 0.24656571499961547,
+  "diag_score_mean": 0.039315563777671765,
+  "turns_histogram": [
+    0,
+    78,
+    6,
+    4,
+    7,
+    3,
+    1,
+    0,
+    0,
+    1
+  ],
+  "variant_id": "V1",
+  "exp_id": "ovn",
+  "description": "BC + diagonal penalty in fitness",
+  "train_seconds": 1565.2350227832794
+}

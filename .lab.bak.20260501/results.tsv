@@ -1,0 +1,28 @@
+experiment	branch	parent	commit	metric	secondary_metrics	status	duration_s	description
+B0	research/barrier-archive	—	—	0.1059	solvability=0.80 high_tort=0.18 dir_bal=0.7352 archive=8/12 mean_tort=1.183	keep	159	T8 re-validation (MEAN tortuosity archive, S4 fitness)
+B1	research/barrier-archive	B0	—	0.0321	solvability=0.86 high_tort=0.04 dir_bal=0.9341 archive=5/12 mean_tort=1.039	discard	156	75th percentile archive descriptor (inflates bins, worse sampling quality)
+B2	research/barrier-archive	B0	—	0.0547	solvability=0.62 high_tort=0.10 dir_bal=0.8818 archive=9/12 mean_tort=1.189	discard	152	Barrier fitness w=0.05 — archive broke to 9/12 but solvability crashed
+B3	research/barrier-archive	—	—	—	—	thought	0	Thought: p75+barrier combination predicted worse than B0; cancelled
+B4	research/barrier-archive	—	—	—	—	thought	0	Thought: MAX archive descriptor — same flaw as p75, even more extreme; cancelled
+B5	research/barrier-archive	B0	—	0.0725	solvability=0.68 high_tort=0.14 dir_bal=0.7615 archive=9/12 mean_tort=1.229 stripe=0.11	discard	199	CONTEXT_SIZE=2 (5x5): reduces stripes+increases turns but hurts solvability
+B6	research/barrier-archive	B0	—	0.0915	solvability=0.72 high_tort=0.16 dir_bal=0.7942 archive=8/12 mean_tort=1.248	discard	152	Threshold-based high_tort fitness (w=0.10, intra=0): highest mean_tort so far but solv drops
+B7	research/barrier-archive	B0	—	0.0292	solvability=0.62 high_tort=0.06 dir_bal=0.7852 archive=8/12 mean_tort=1.159	discard	205	5×5+high_tort combined: catastrophic (too many changes, 28-input network underpowered in 50 gens)
+P0	research/two-pass	B0	—	0.0184	solvability=0.38 high_tort=0.08 dir_bal=0.6053 archive=9/12 mean_tort=1.247	discard	220	2-pass generation: solvability catastrophic (38%) — input distribution mismatch pass1 vs pass2
+B9	research/two-pass	B0	—	0.0377	solvability=0.56 high_tort=0.08 dir_bal=0.8410 archive=8/12 mean_tort=1.154	discard	164	Aggressive high_tort (w=0.25): high_tort LOWER than B0 — more walls breaks paths, lucky maps fewer
+B0f	research/two-pass	B0	—	0.0086	solvability=0.62 high_tort=0.02 dir_bal=0.6972 archive=8/12 mean_tort=1.047	interesting	169	Fresh eval from top archive genomes — reveals B0's 0.1059 is archive selection artifact, not true genome quality
+B12	research/two-pass	B0	—	0.0961	solvability=0.78 high_tort=0.14 dir_bal=0.8802 archive=9/12 mean_tort=1.140	keep*	157	ht_rate archive: dir_balance=0.88 (best ever!), solv=78%, but high_tort=14% (vs B0 18%)
+B12f	research/two-pass	B0	—	0.0107	solvability=0.64 high_tort=0.02 dir_bal=0.8391 archive=9/12 mean_tort=1.050	interesting	165	B12 fresh eval: same artifact as B0f — confirms genomes don't truly learn tortuosity
+B12-100	research/two-pass	B12	—	0.1178	solvability=0.86 high_tort=0.16 dir_bal=0.8561 archive=9/12 mean_tort=1.140	keep	339	B12 × 100 gens — BEATS B0! solv+86% dir_bal+0.86, high_tort=16%. More gens = quality improves within cells
+B12-200	research/two-pass	B12	—	0.0926	solvability=0.76 high_tort=0.14 dir_bal=0.8703 archive=10/12 mean_tort=1.142	discard	667	B12 × 200 gens — REGRESSES vs 100 gens. 200 gens overfits, 100 gen sweet spot for B12.
+B13	research/two-pass	B12-100	—	0.1470	solvability=0.90 high_tort=0.20 dir_bal=0.8167 archive=8/12 mean_tort=1.197	keep	337	B13 = ht_rate + ht_small(w=0.03) × 100 gens — BEST RESULT! 0.1470, solv=90%, high_tort=20%
+B13-150	research/two-pass	B13	—	0.1300	solvability=0.82 high_tort=0.18 dir_bal=0.8840 archive=9/12	discard	497	B13 × 150 gens — regression vs 100 gens, overfit past sweet spot
+B13-s1	research/two-pass	B13	—	0.0908	solvability=0.74 high_tort=0.16 dir_bal=0.7673 archive=7/12	discard	337	B13 SEED=1 — high seed variance, SEED=0 uniquely good
+B14	research/two-pass	B13	—	0.0867	solvability=0.76 high_tort=0.14 dir_bal=0.8147 archive=8/12	discard	352	ht_medium w=0.05 × 100 gens — larger ht signal + f_dir=0.10 worse than ht_small
+B15	research/two-pass	B13	—	0.1388	solvability=0.90 high_tort=0.20 dir_bal=0.7711 archive=9/12	discard	356	dir_boost: f_dir=0.10 funded by f_path/f_turns — dir_bal DROPS despite higher f_dir weight
+B13-s2	research/two-pass	B13	—	0.0445	solvability=0.74 high_tort=0.08 dir_bal=0.7519 archive=7/12	discard	356	B13 SEED=2 — terrible, variance huge
+B13-s3	research/two-pass	B13	—	0.0990	solvability=0.78 high_tort=0.16 dir_bal=0.7932 archive=8/12	discard	345	B13 SEED=3 — better but still below B13-s0
+B16	research/two-pass	B13	—	0.1217	solvability=0.78 high_tort=0.18 dir_bal=0.8669 archive=10/12	discard	320	branch_fund: f_branch 0.15→0.12 to fund ht_small, f_dir=0.10 — dir_bal great (0.87) but solv drops to 78%
+B17	research/two-pass	B13	—	0.1642	solvability=0.92 high_tort=0.22 dir_bal=0.8111 archive=7/12	keep	343	BONUS_EMPTY=2.0 + ht_small — TARGET EXCEEDED! 0.1642 > 0.15. solv=92%, high_tort=22%, dir_bal=0.81
+B17-s1	research/two-pass	B17	—	0.1131	solvability=0.86 high_tort=0.16 dir_bal=0.8220 archive=9/12	discard	341	B17 SEED=1 — variance still high, ratio 1.45× vs B13's 1.62× (slight improvement)
+B17-s2	research/two-pass	B17	—	0.1376	solvability=0.90 high_tort=0.18 dir_bal=0.8496 archive=8/12	discard	377	B17 SEED=2 — better than s1 but still < target
+B18	research/two-pass	B17	—	0.1230	solvability=0.74 high_tort=0.20 dir_bal=0.8309 archive=9/12	discard	360	BONUS_EMPTY=2.5 — over-aggressive: solv crashes to 74%, diminishing returns past 2.0

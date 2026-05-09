@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.42,
+  "solvability": 0.98,
+  "L_pattern_count": 56,
+  "unsolvable_count": 2,
+  "diagonal_stripes_count": 10,
+  "near_empty_count": 58,
+  "near_full_count": 5,
+  "astar_diff_mean": 0.7249257305905321,
+  "astar_div_pairs_mean": 0.19252380952380954,
+  "wall_density_mean": 0.20576388888888889,
+  "wall_density_std": 0.24610518357233527,
+  "diag_score_mean": 0.13823381868076656,
+  "turns_histogram": [
+    0,
+    56,
+    1,
+    12,
+    0,
+    8,
+    0,
+    4,
+    17,
+    2
+  ],
+  "variant_id": "V4",
+  "exp_id": "ovn",
+  "description": "BC 8-dim with spatial_entropy",
+  "train_seconds": 1598.856216430664
+}

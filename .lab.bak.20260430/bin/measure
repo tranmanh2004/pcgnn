@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Extract primary metric from a result.json
+# Usage: measure <exp_id>
+set -e
+EXP_ID="${1:?usage: measure <exp_id>}"
+LAB_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+RESULT="$LAB_DIR/workspace/exp-$EXP_ID/result.json"
+[ -f "$RESULT" ] || { echo "ERROR: $RESULT not found" >&2; exit 1; }
+python -c "import json; print('%.6f' % json.load(open('$RESULT'))['non_l_pattern_rate'])" | tr -d '[:space:]'

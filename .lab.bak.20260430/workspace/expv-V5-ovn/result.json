@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.67,
+  "solvability": 0.67,
+  "L_pattern_count": 0,
+  "unsolvable_count": 33,
+  "diagonal_stripes_count": 97,
+  "near_empty_count": 10,
+  "near_full_count": 9,
+  "astar_diff_mean": 0.37339029702466925,
+  "astar_div_pairs_mean": 0.23990476190476187,
+  "wall_density_mean": 0.3668055555555555,
+  "wall_density_std": 0.17928608208222707,
+  "diag_score_mean": 0.7837637847043405,
+  "turns_histogram": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    64,
+    33
+  ],
+  "variant_id": "V5",
+  "exp_id": "ovn",
+  "description": "BC 8-dim with corridor_width_var",
+  "train_seconds": 1608.380169391632
+}

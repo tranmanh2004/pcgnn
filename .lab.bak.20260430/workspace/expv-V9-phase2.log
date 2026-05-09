@@ -1,0 +1,13 @@
+[V9] V6 + entropy dim (best low-turn balance + structure)
+[V9] BC dim = 8, weights = [1, 1, 1, 1, 1, 1, 4.0, 4.0]
+[V9] Penalty = combined × 0.3
+[V9] training 30 gen × 50 pop × 8 maps...
+[V9] training done in 1582.7s
+
+[V9] non_l_pattern_rate    = 0.5200
+[V9] solvability           = 1.0000
+[V9] diagonal_stripes_pct  = 0/100
+[V9] near_empty_pct        = 42/100
+[V9] near_full_pct         = 0/100
+[V9] astar_div_pairs_mean  = 0.1747
+[V9] astar_diff_mean       = 0.6763

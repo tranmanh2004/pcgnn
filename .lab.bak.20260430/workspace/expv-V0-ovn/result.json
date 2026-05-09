@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.88,
+  "solvability": 0.89,
+  "L_pattern_count": 1,
+  "unsolvable_count": 11,
+  "diagonal_stripes_count": 52,
+  "near_empty_count": 67,
+  "near_full_count": 5,
+  "astar_diff_mean": 0.755183314170421,
+  "astar_div_pairs_mean": 0.14466666666666667,
+  "wall_density_mean": 0.15375,
+  "wall_density_std": 0.22460746795352515,
+  "diag_score_mean": 0.40550667301331683,
+  "turns_histogram": [
+    0,
+    1,
+    21,
+    9,
+    14,
+    0,
+    4,
+    0,
+    40,
+    11
+  ],
+  "variant_id": "V0",
+  "exp_id": "ovn",
+  "description": "Control: BC 7-dim winner from exp #5 (re-run for sanity)",
+  "train_seconds": 1336.1419773101807
+}

@@ -1,0 +1,13 @@
+[V8] BC 9-dim entropy + corridor (combine V4 + V5)
+[V8] BC dim = 9, weights = [1, 1, 1, 1, 1, 1, 7.84, 4.0, 4.0]
+[V8] Penalty = None × 0.0
+[V8] training 30 gen × 50 pop × 8 maps...
+[V8] training done in 1826.2s
+
+[V8] non_l_pattern_rate    = 0.2500
+[V8] solvability           = 0.8700
+[V8] diagonal_stripes_pct  = 33/100
+[V8] near_empty_pct        = 38/100
+[V8] near_full_pct         = 31/100
+[V8] astar_div_pairs_mean  = 0.2430
+[V8] astar_diff_mean       = 0.5088

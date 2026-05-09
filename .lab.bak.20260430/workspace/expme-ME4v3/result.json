@@ -1,0 +1,77 @@
+{
+  "variant": "ME4",
+  "max_gen": 50,
+  "elapsed_s": 359.7,
+  "archive_coverage": "12/12",
+  "archive_coverage_pct": 1.0,
+  "n_maps_evaluated": 50,
+  "summary": {
+    "solvability_rate": 1.0,
+    "non_l_pattern_rate": 0.32,
+    "diagonal_stripes_count": 7,
+    "near_empty_count": 19,
+    "near_full_count": 10
+  },
+  "compound": 0.1156,
+  "tortuosity_mean": 1.4686,
+  "seg_length_mean": 9.635,
+  "dead_end_density": 0.1114,
+  "tort_compound": 0.0849,
+  "classification": {
+    "near-empty": 19,
+    "L-pattern": 11,
+    "near-full": 10,
+    "diagonal-stripes": 7,
+    "very-zigzag": 3
+  },
+  "archive": {
+    "(0, 0)": {
+      "fitness": 0.5597,
+      "gen_added": 30
+    },
+    "(0, 1)": {
+      "fitness": 0.6478,
+      "gen_added": 17
+    },
+    "(0, 2)": {
+      "fitness": 0.6437,
+      "gen_added": 13
+    },
+    "(1, 0)": {
+      "fitness": 0.6534,
+      "gen_added": 37
+    },
+    "(1, 1)": {
+      "fitness": 0.6648,
+      "gen_added": 18
+    },
+    "(1, 2)": {
+      "fitness": 0.6614,
+      "gen_added": 29
+    },
+    "(2, 0)": {
+      "fitness": 0.6741,
+      "gen_added": 48
+    },
+    "(2, 1)": {
+      "fitness": 0.6723,
+      "gen_added": 14
+    },
+    "(2, 2)": {
+      "fitness": 0.6777,
+      "gen_added": 27
+    },
+    "(3, 0)": {
+      "fitness": 0.6764,
+      "gen_added": 44
+    },
+    "(3, 1)": {
+      "fitness": 0.6808,
+      "gen_added": 47
+    },
+    "(3, 2)": {
+      "fitness": 0.6669,
+      "gen_added": 24
+    }
+  }
+}

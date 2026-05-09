@@ -1,0 +1,21 @@
+experiment	branch	parent	commit	metric	secondary_metrics	status	duration_s	description
+B0	research/two-pass	-	d85ee82e	0.1642	sol=0.92 ht=0.22 dir=0.811 archive=7/12	keep	343	B17 baseline — ht_rate archive + BONUS_EMPTY=2.0 + ht_small w=0.03
+C1	research/sol-ht-balance	B0	DISCARDED	0.1249	sol=0.88 ht=0.18 dir=0.789 archive=7/12	discard	150	bin-level ht_scale 1+0.4*bin — discontinuous jump, NEAT speciation neutralizes
+C3	research/sol-ht-balance	B0	ddccd273	pending	-	running	-	adaptive ht weight: w_ht=0.03+0.12*max(0,sol-0.8)
+C7	research/sol-ht-balance	B0	DISCARDED	0.0619	sol=0.80 ht=0.10 dir=0.773 archive=7/12	discard	163	lower bin thresholds — lower bar = lower quality
+C8	research/sol-ht-balance	B0	DISCARDED	0.0662	sol=0.90 ht=0.10 dir=0.736 archive=8/9	discard	161	sol×ht archive — organization ≠ capability
+C10	research/sol-ht-balance	B0	DISCARDED	0.0557	sol=0.66 ht=0.12 dir=0.703 archive=5/12	discard	118	direct product fitness — flat landscape when ht≈0
+C5	research/sol-ht-balance	B0	DISCARDED	0.1011	sol=0.82 ht=0.16 dir=0.770 archive=9/12	discard	175	fund w_ht=0.06 from f_intra — f_intra drives ht, cutting intra = cutting ht source
+C12	research/sol-ht-balance	B0	20b7d683	0.0367	sol=0.76 ht=0.06 dir=0.804 archive=6/12	discard	164	archive injection every 10 gens — injection disrupts NEAT speciation, worst result
+C14	research/sol-ht-balance	B0	4364b3ec	0.0595	sol=0.88 ht=0.08 dir=0.845 archive=7/12	discard	178	TUG per-species shaping — species don't have genome capability to raise ht
+C15	research/sol-ht-balance	B0	ada74c86	0.1383	sol=0.90 ht=0.22 dir=0.699 archive=6/12	discard	159	reciprocal penalty factor=4 — ht=22% maintained but dir=0.699 (vs B17 0.811) → best C-series but below B17
+C16	research/sol-ht-balance	B0	DISCARDED	0.0443	sol=0.60 ht=0.12 dir=0.616 archive=10/12	discard	162	reciprocal penalty on sol only, target=0.30 — sol collapsed to 60%, target too high
+C17	research/sol-ht-balance	B0	DISCARDED	0.0766	sol=0.78 ht=0.12 dir=0.819 archive=7/12	discard	162	reciprocal factor=1 — dir recovered (0.819) but ht=12% only; trade-off confirmed
+D1	research/recurrent-neat	B0	untracked	0.0602	sol=0.74 ht=0.10 dir=0.813 archive=7/12	discard	166	recurrent NEAT S4 formula — sol dropped 74% (50 gen not enough), but non_l=70% turns=5.9 promising
+D2	research/recurrent-neat	D1	untracked	0.1016	sol=0.84 ht=0.16 dir=0.756 archive=8/12	interesting	352	recurrent+B17+100gen — improving (D1=0.0602→D2=0.1016), gen70 breakthrough, mean_turns=6.0
+D3	research/recurrent-neat	D2	untracked	0.1393	sol=0.92 ht=0.20 dir=0.757 archive=8/12	interesting	784	recurrent+B17+200gen — sol=92% ht=20% match B17 but dir=0.757 stuck (B17=0.811)
+D4	research/recurrent-neat	D3	untracked	0.1333	sol=0.76 ht=0.20 dir=0.877 archive=9/12	discard	648	recurrent+dir_boost+200gen — dir=0.877 (>B17!) but sol=76% trade-off, cv3 < D3
+D5	research/recurrent-neat	D4	3d37db98	0.0631	sol=0.70 ht=0.14 dir=0.644 archive=9/12	interesting	167	recurrent+ME12+50gen — ht_rate 10%→14% (f_ht confirmed), dir dropped (no dir term)
+D6	research/recurrent-neat	D5	lab-only	0.0977	sol=0.84 ht=0.16 dir=0.727 archive=9/12	keep	177	recurrent+ME12+dir=0.05+50gen — best 50-gen result, ready for Kaggle 200-gen
+D7	research/recurrent-neat	D6	7f4d032a	pending	archive=4/12 ht>0 cv3=0.027@10gen	keep	29	ht_rate archive fix + cv3 winner override — notebook was using (turns×density) archive (bug), now (ht_rate×density). cv3 override picks ht>0 genome. Ready for 200-gen Kaggle.
+D8	research/recurrent-neat	D7	05df48e5	pending	cv3=0.074@10gen archive=7/12	keep	28	D8: +horizontal_stripe_penalty(w=0.20) — broke stripe collapse. cv3 2.7x vs D7@10gen, archive 4->7/12. Ready Kaggle 200gen.

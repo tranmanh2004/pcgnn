@@ -1,0 +1,15 @@
+{
+  "pkl": "neat_winner_seed0 (3).pkl",
+  "solvability": 1.0,
+  "non_l": 0.76,
+  "diag": 0,
+  "empty": 5,
+  "full": 0,
+  "compound": 0.722,
+  "classification": {
+    "moderate-organic": 69,
+    "L-pattern": 20,
+    "very-zigzag": 6,
+    "near-empty": 5
+  }
+}

@@ -1,0 +1,13 @@
+[V7] BC 10-dim combined + small combined penalty
+[V7] BC dim = 10, weights = [1, 1, 1, 1, 1, 1, 7.84, 3.0, 3.0, 3.0]
+[V7] Penalty = combined × 0.2
+[V7] training 30 gen × 50 pop × 8 maps...
+[V7] training done in 1893.1s
+
+[V7] non_l_pattern_rate    = 0.3000
+[V7] solvability           = 1.0000
+[V7] diagonal_stripes_pct  = 11/100
+[V7] near_empty_pct        = 36/100
+[V7] near_full_pct         = 11/100
+[V7] astar_div_pairs_mean  = 0.2282
+[V7] astar_diff_mean       = 0.5245

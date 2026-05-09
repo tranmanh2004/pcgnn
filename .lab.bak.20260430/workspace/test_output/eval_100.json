@@ -1,0 +1,319 @@
+{
+  "n_maps": 100,
+  "seed": 42,
+  "pkl": "neat_winner_seed0 (1).pkl",
+  "summary": {
+    "solvability_rate": 0.88,
+    "non_l_pattern_rate": 0.75,
+    "L_pattern_count": 13,
+    "unsolvable_count": 12,
+    "diagonal_stripes_count": 44,
+    "near_empty_count": 34,
+    "near_full_count": 9
+  },
+  "classification": {
+    "diagonal-stripes": 44,
+    "near-empty": 34,
+    "L-pattern": 10,
+    "near-full": 9,
+    "unsolvable": 3
+  },
+  "stats_solvable_only": {
+    "turns": {
+      "mean": 9.340909090909092,
+      "std": 7.85216583271538,
+      "min": 1.0,
+      "max": 24.0,
+      "median": 6.0
+    },
+    "path_len": {
+      "mean": 26.0,
+      "std": 0.0,
+      "min": 26.0,
+      "max": 26.0,
+      "median": 26.0
+    },
+    "diff": {
+      "mean": 0.6486887209131041,
+      "std": 0.3128912154729332,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.7020596590909092
+    }
+  },
+  "stats_all": {
+    "wall_density": {
+      "mean": 0.3225,
+      "std": 0.2590985869897627,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.3443877551020408
+    },
+    "regions": {
+      "mean": 4.39,
+      "std": 4.653804894922003,
+      "min": 0.0,
+      "max": 26.0,
+      "median": 3.0
+    },
+    "diag_score": {
+      "mean": 0.49941526590103946,
+      "std": 0.31500825608561817,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.5931372549019608
+    }
+  },
+  "pairwise_diversity": {
+    "astar_trajectory": {
+      "mean": 0.22138095238095234,
+      "std": 0.16209546891595675
+    },
+    "bc_distance": {
+      "mean": 0.3992899454407772,
+      "std": 0.19147484954081417
+    }
+  },
+  "per_map_first_20": [
+    {
+      "id": 1,
+      "turns": 7,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 98,
+      "wall_density": 0.5,
+      "regions": 6,
+      "diff": 0.4647887323943662,
+      "diag_score": 0.5222222222222223,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 2,
+      "turns": 6,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 16,
+      "wall_density": 0.08163265306122448,
+      "regions": 1,
+      "diff": 0.869281045751634,
+      "diag_score": 0.4,
+      "class": "near-empty"
+    },
+    {
+      "id": 3,
+      "turns": 20,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 47,
+      "wall_density": 0.23979591836734693,
+      "regions": 3,
+      "diff": 0.639344262295082,
+      "diag_score": 0.8372093023255814,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 4,
+      "turns": 19,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 82,
+      "wall_density": 0.41836734693877553,
+      "regions": 3,
+      "diff": 0.7471264367816092,
+      "diag_score": 0.6973684210526315,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 5,
+      "turns": 4,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 13,
+      "wall_density": 0.0663265306122449,
+      "regions": 1,
+      "diff": 0.9230769230769231,
+      "diag_score": 0.25,
+      "class": "near-empty"
+    },
+    {
+      "id": 6,
+      "turns": 9,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 89,
+      "wall_density": 0.45408163265306123,
+      "regions": 5,
+      "diff": 0.3875,
+      "diag_score": 0.5853658536585366,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 7,
+      "turns": 21,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 54,
+      "wall_density": 0.2755102040816326,
+      "regions": 3,
+      "diff": 0.6782608695652174,
+      "diag_score": 0.7755102040816326,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 8,
+      "turns": 4,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 14,
+      "wall_density": 0.07142857142857142,
+      "regions": 1,
+      "diff": 0.9290322580645162,
+      "diag_score": 0.4166666666666667,
+      "class": "near-empty"
+    },
+    {
+      "id": 9,
+      "turns": 6,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 16,
+      "wall_density": 0.08163265306122448,
+      "regions": 2,
+      "diff": 0.869281045751634,
+      "diag_score": 0.4,
+      "class": "near-empty"
+    },
+    {
+      "id": 10,
+      "turns": -1,
+      "solvable": 0,
+      "path_len": 0,
+      "wall_count": 109,
+      "wall_density": 0.5561224489795918,
+      "regions": 12,
+      "diff": 0.0,
+      "diag_score": 0.696078431372549,
+      "class": "unsolvable"
+    },
+    {
+      "id": 11,
+      "turns": 2,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 3,
+      "wall_density": 0.015306122448979591,
+      "regions": 1,
+      "diff": 0.9397590361445783,
+      "diag_score": 0.0,
+      "class": "near-empty"
+    },
+    {
+      "id": 12,
+      "turns": 10,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 21,
+      "wall_density": 0.10714285714285714,
+      "regions": 1,
+      "diff": 0.8040540540540541,
+      "diag_score": 0.5789473684210527,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 13,
+      "turns": 22,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 81,
+      "wall_density": 0.413265306122449,
+      "regions": 4,
+      "diff": 0.6931818181818182,
+      "diag_score": 0.7894736842105263,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 14,
+      "turns": 20,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 79,
+      "wall_density": 0.4030612244897959,
+      "regions": 6,
+      "diff": 0.6888888888888889,
+      "diag_score": 0.7083333333333334,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 15,
+      "turns": 3,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 4,
+      "wall_density": 0.02040816326530612,
+      "regions": 1,
+      "diff": 0.9575757575757575,
+      "diag_score": 0.0,
+      "class": "near-empty"
+    },
+    {
+      "id": 16,
+      "turns": 3,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 93,
+      "wall_density": 0.4744897959183674,
+      "regions": 6,
+      "diff": 0.21052631578947367,
+      "diag_score": 0.5882352941176471,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 17,
+      "turns": 19,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 43,
+      "wall_density": 0.2193877551020408,
+      "regions": 3,
+      "diff": 0.8571428571428571,
+      "diag_score": 0.7105263157894737,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 18,
+      "turns": 9,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 90,
+      "wall_density": 0.45918367346938777,
+      "regions": 6,
+      "diff": 0.5316455696202531,
+      "diag_score": 0.5542168674698795,
+      "class": "diagonal-stripes"
+    },
+    {
+      "id": 19,
+      "turns": 1,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 0,
+      "wall_density": 0.0,
+      "regions": 1,
+      "diff": 1.0,
+      "diag_score": 0.0,
+      "class": "near-empty"
+    },
+    {
+      "id": 20,
+      "turns": 21,
+      "solvable": 1,
+      "path_len": 26,
+      "wall_count": 86,
+      "wall_density": 0.4387755102040816,
+      "regions": 5,
+      "diff": 0.5180722891566265,
+      "diag_score": 0.7564102564102564,
+      "class": "diagonal-stripes"
+    }
+  ]
+}

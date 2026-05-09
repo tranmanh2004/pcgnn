@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.7,
+  "solvability": 0.98,
+  "L_pattern_count": 28,
+  "unsolvable_count": 2,
+  "diagonal_stripes_count": 0,
+  "near_empty_count": 1,
+  "near_full_count": 0,
+  "astar_diff_mean": 0.6374786039047522,
+  "astar_div_pairs_mean": 0.1890952380952381,
+  "wall_density_mean": 0.43499999999999994,
+  "wall_density_std": 0.10537960481569054,
+  "diag_score_mean": 0.0019208324554760262,
+  "turns_histogram": [
+    0,
+    28,
+    21,
+    3,
+    17,
+    8,
+    9,
+    6,
+    6,
+    2
+  ],
+  "variant_id": "V10",
+  "exp_id": "phase2",
+  "description": "V3 with STRONGER combined penalty (0.5)",
+  "train_seconds": 1345.6286034584045
+}

@@ -1,0 +1,28 @@
+experiment	branch	parent	commit	metric	secondary_metrics	status	duration_s	description
+0	research/bc-vector-l-pattern	-	-	0.200000	solv=0.78 div=0.2932 diff=0.4405	keep	966.7	baseline: BC 6-dim from improve2.ipynb (wall_dens, path_norm, dead_norm, branch_norm, regions_norm, astar_diff)
+1	research/bc-vector-l-pattern	0	-	0.340000	solv=0.96 div=0.2276 diff=0.4563	keep	1714.2	H1: add num_turns_norm = turns/(path_len-2) as 7th BC dim
+2	research/bc-vector-l-pattern	1	-	0.560000	solv=0.56 div=0.2481 diff=0.3486	keep*	1372.9	H3-targeted: weighted bc_distance, turns dim weight=9 (effective 3x). L-pattern killed but solvability collapsed.
+3	research/bc-vector-l-pattern	2	-	0.620000	solv=0.80 div=0.2491 diff=0.4688	keep	1291.5	weighted BC turns weight=4 (effective 2x). SWEET SPOT — best primary AND solvability recovered. Compound 0.496.
+4	research/bc-vector-l-pattern	3	-	0.820000	solv=0.96 div=0.1860 diff=0.6381	keep	1349.6	weighted BC turns weight=6.25 (effective 2.5x). NEAR TARGET (0.85). Compound 0.787. Distribution most spread across turns.
+5	research/bc-vector-l-pattern	4	-	0.880000	solv=0.90 div=0.1625 diff=0.7625	keep	2258.3	weighted BC turns weight=7.84 (effective 2.8x). TARGET MET (≥0.85). Compound 0.792. Only 1 L-pattern remaining (96% reduction from baseline).
+6	research/bc-vector-l-pattern	5	-	0.880000	solv=0.89 diag=52 empty=67 full=5 compound=0.105	keep	1336.1	V0: Control: BC 7-dim winner from exp #5 (re-run for sanity)
+7	research/bc-vector-l-pattern	6	-	0.210000	solv=0.99 diag=4 empty=55 full=4 compound=0.082	keep	1565.2	V1: BC + diagonal penalty in fitness
+8	research/bc-vector-l-pattern	7	-	0.690000	solv=0.69 diag=100 empty=9 full=0 compound=0.000	keep	1278.3	V2: BC + density-extreme penalty in fitness
+9	research/bc-vector-l-pattern	8	-	0.450000	solv=0.87 diag=4 empty=15 full=2 compound=0.312	keep	1419.5	V3: BC + combined (diagonal + density) penalty in fitness
+10	research/bc-vector-l-pattern	9	-	0.420000	solv=0.98 diag=10 empty=58 full=5 compound=0.137	keep	1598.9	V4: BC 8-dim with spatial_entropy
+11	research/bc-vector-l-pattern	10	-	0.670000	solv=0.67 diag=97 empty=10 full=9 compound=0.011	keep	1608.4	V5: BC 8-dim with corridor_width_var
+12	research/bc-vector-l-pattern	11	-	0.250000	solv=0.97 diag=21 empty=3 full=26 compound=0.136	keep	1387.7	V6: Best-of-both: reduce turns weight to 4 (2x), add combined penalty
+13	research/bc-vector-l-pattern	12	-	0.300000	solv=1.00 diag=11 empty=36 full=11 compound=0.142	keep	1893.1	V7: BC 10-dim combined + small combined penalty
+14	research/bc-vector-l-pattern	13	-	0.250000	solv=0.87 diag=33 empty=38 full=31 compound=0.045	keep	1826.2	phase2/V8: BC 9-dim entropy + corridor (combine V4 + V5)
+15	research/bc-vector-l-pattern	14	-	0.520000	solv=1.00 diag=0 empty=42 full=0 compound=0.302	keep	1582.7	phase2/V9: V6 + entropy dim (best low-turn balance + structure)
+16	research/bc-vector-l-pattern	15	-	0.700000	solv=0.98 diag=0 empty=1 full=0 compound=0.679	keep	1345.6	phase2/V10: V3 with STRONGER combined penalty (0.5)
+17	research/bc-vector-l-pattern	16	-	0.290000	solv=1.00 diag=9 empty=2 full=14 compound=0.222	keep	1347.6	phase2/V11: Inverted: turns weight 1x + combined penalty (low BC pressure)
+22	research/bc-vector-l-pattern	17	-	0.860000	solv=1.00 diag=0 empty=0 full=0 seg=5.98 dead=0.022 archive=12/12	keep	403.1	ME8: ME3+branching_fitness(w=0.10 target=0.10). New best in compound.
+23	research/bc-vector-l-pattern	17	-	0.625600	solv=1.00 diag=0 empty=4 full=0 seg=6.44 dead=0.056 archive=12/12	discard	424.3	ME5b: ME3+seg_penalty(max_seg=2). Stronger penalty kills compound.
+24	research/bc-vector-l-pattern	17	-	0.780000	solv=1.00 diag=0 empty=0 full=0 seg=6.50 dead=0.035 archive=12/12	discard	382.6	ME9: ME3+path_coverage(w=0.10). No compound improvement.
+25	research/bc-vector-l-pattern	17	-	0.862400	solv=1.00 diag=0 empty=1 full=0 seg=4.98 dead=0.029 archive=12/12	keep*	448.0	ME10: ME5+branching. Global best (1 near-empty). Seg 4.98 best so far.
+26	research/bc-vector-l-pattern	22	-	0.920000	solv=1.00 diag=0 empty=0 full=0 seg=5.53 dead=0.024 archive=12/12	keep	367.8	ME11: branch w=0.15 target=0.10. NEW GLOBAL BEST +6% vs ME10.
+27	research/bc-vector-l-pattern	25	-	0.901600	solv=1.00 diag=0 empty=1 full=0 seg=4.83 dead=0.019 archive=12/12	keep*	365.8	ME12: ME10+branch target=0.15. 1 near-empty.
+28	research/bc-vector-l-pattern	26	-	0.900000	solv=1.00 diag=0 empty=0 full=0 seg=5.53 archive=12/12	discard	388.0	ME13: branch w=0.20 target=0.10. Regression — too much branching hurts diversity.
+29	research/bc-vector-l-pattern	26	-	0.860000	solv=1.00 diag=0 empty=0 full=0 seg=5.18 archive=12/12	discard	391.8	ME14: ME11+seg_pen. Penalty fights branching — regression.
+30	research/bc-vector-l-pattern	26	-	0.860000	solv=1.00 diag=0 empty=0 full=0 seg=5.73 archive=12/12	discard	548.5	ME15: ME11 config MAX_GEN=75. More gen hurts — NEAT collapses after 50 gen.

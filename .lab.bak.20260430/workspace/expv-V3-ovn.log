@@ -1,0 +1,13 @@
+[V3] BC + combined (diagonal + density) penalty in fitness
+[V3] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 7.84]
+[V3] Penalty = combined × 0.3
+[V3] training 30 gen × 50 pop × 8 maps...
+[V3] training done in 1419.5s
+
+[V3] non_l_pattern_rate    = 0.4500
+[V3] solvability           = 0.8700
+[V3] diagonal_stripes_pct  = 4/100
+[V3] near_empty_pct        = 15/100
+[V3] near_full_pct         = 2/100
+[V3] astar_div_pairs_mean  = 0.2392
+[V3] astar_diff_mean       = 0.2709

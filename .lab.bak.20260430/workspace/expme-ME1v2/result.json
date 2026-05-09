@@ -1,0 +1,73 @@
+{
+  "variant": "ME1",
+  "max_gen": 50,
+  "elapsed_s": 861.3,
+  "archive_coverage": "12/12",
+  "archive_coverage_pct": 1.0,
+  "n_maps_evaluated": 50,
+  "summary": {
+    "solvability_rate": 1.0,
+    "non_l_pattern_rate": 0.3,
+    "diagonal_stripes_count": 0,
+    "near_empty_count": 8,
+    "near_full_count": 1
+  },
+  "compound": 0.246,
+  "classification": {
+    "L-pattern": 27,
+    "moderate-organic": 13,
+    "near-empty": 8,
+    "near-full": 1,
+    "very-zigzag": 1
+  },
+  "archive": {
+    "(0, 0)": {
+      "fitness": 0.3973,
+      "gen_added": 14
+    },
+    "(0, 1)": {
+      "fitness": 0.5375,
+      "gen_added": 37
+    },
+    "(0, 2)": {
+      "fitness": 0.5453,
+      "gen_added": 36
+    },
+    "(1, 0)": {
+      "fitness": 0.5472,
+      "gen_added": 16
+    },
+    "(1, 1)": {
+      "fitness": 0.5839,
+      "gen_added": 18
+    },
+    "(1, 2)": {
+      "fitness": 0.5815,
+      "gen_added": 36
+    },
+    "(2, 0)": {
+      "fitness": 0.5607,
+      "gen_added": 23
+    },
+    "(2, 1)": {
+      "fitness": 0.5869,
+      "gen_added": 27
+    },
+    "(2, 2)": {
+      "fitness": 0.5798,
+      "gen_added": 44
+    },
+    "(3, 0)": {
+      "fitness": 0.5453,
+      "gen_added": 43
+    },
+    "(3, 1)": {
+      "fitness": 0.545,
+      "gen_added": 43
+    },
+    "(3, 2)": {
+      "fitness": 0.5265,
+      "gen_added": 47
+    }
+  }
+}

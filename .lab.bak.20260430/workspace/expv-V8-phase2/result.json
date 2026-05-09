@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.25,
+  "solvability": 0.87,
+  "L_pattern_count": 62,
+  "unsolvable_count": 13,
+  "diagonal_stripes_count": 33,
+  "near_empty_count": 38,
+  "near_full_count": 31,
+  "astar_diff_mean": 0.5087801046569481,
+  "astar_div_pairs_mean": 0.24295238095238095,
+  "wall_density_mean": 0.39826388888888886,
+  "wall_density_std": 0.36883221907205627,
+  "diag_score_mean": 0.3227464550414814,
+  "turns_histogram": [
+    0,
+    62,
+    0,
+    1,
+    1,
+    4,
+    0,
+    5,
+    14,
+    13
+  ],
+  "variant_id": "V8",
+  "exp_id": "phase2",
+  "description": "BC 9-dim entropy + corridor (combine V4 + V5)",
+  "train_seconds": 1826.2330296039581
+}

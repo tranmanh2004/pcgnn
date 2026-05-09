@@ -1,0 +1,13 @@
+[V5] BC 8-dim with corridor_width_var
+[V5] BC dim = 8, weights = [1, 1, 1, 1, 1, 1, 7.84, 4.0]
+[V5] Penalty = None × 0.0
+[V5] training 30 gen × 50 pop × 8 maps...
+[V5] training done in 1608.4s
+
+[V5] non_l_pattern_rate    = 0.6700
+[V5] solvability           = 0.6700
+[V5] diagonal_stripes_pct  = 97/100
+[V5] near_empty_pct        = 10/100
+[V5] near_full_pct         = 9/100
+[V5] astar_div_pairs_mean  = 0.2399
+[V5] astar_diff_mean       = 0.3734

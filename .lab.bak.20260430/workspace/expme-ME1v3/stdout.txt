@@ -1,0 +1,40 @@
+[ME1] Starting MAP-Elites — 50 gen, POP=50
+[ME1] Archive grid: 4x3 = 12 cells
+[ME1] Penalty: True  | Turns fitness: False
+  gen   0  archive= 6/12  best_fit=0.405  12s
+  gen  10  archive=11/12  best_fit=0.580  167s
+  gen  20  archive=12/12  best_fit=0.584  322s
+  gen  30  archive=12/12  best_fit=0.587  476s
+  gen  40  archive=12/12  best_fit=0.587  617s
+  gen  49  archive=12/12  best_fit=0.587  746s
+[ME1] Training done in 746s (12.4min)
+[ME1] Collecting maps from archive (12 cells occupied)...
+[ME1] Good cells (turns>=2): 9/12
+[ME1] Evaluating 50 maps...
+
+=======================================================
+[ME1] Results
+=======================================================
+  Archive coverage : 12/12 cells (100%)
+  Solvability      : 100.0%
+  Non-L-pattern    : 66.0%
+  Diagonal stripes : 0/50
+  Near-empty       : 2/50
+  Near-full        : 0/50
+  COMPOUND         : 0.6336
+
+  Classification:
+    moderate-organic    :  22  ######################
+    L-pattern           :  16  ################
+    very-zigzag         :  10  ##########
+    near-empty          :   2  ##
+
+  Archive grid (turns x density, good range only):
+    turns\dens  .15-.30  .30-.45  .45-.60
+    turns=0-1     0.40   0.54   0.55 
+    turns=2-4     0.55   0.58   0.58 
+    turns=5-8     0.56   0.59   0.58 
+    turns=9+     0.55   0.54   0.53 
+
+  Result: .lab\workspace\expme-ME1v3\result.json
+  PNG: .lab\workspace\expme-ME1v3\sample.png

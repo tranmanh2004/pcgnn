@@ -1,0 +1,20 @@
+ME12-D6 smoke test: 10 gen, 50 pop, 8 maps/genome
+Weights: solve=0.45, intra=0.15, path=0.08, turns=0.02, branch=0.1, ht=0.15, dir=0.05
+Recurrent: feed_forward=False, RecurrentNetwork
+
+  gen  0/10  best=0.697  sol=0.94  ht=0.00  dir=0.800  archive=7/12
+  gen  1/10  best=0.579  sol=0.88  ht=0.00  dir=0.809  archive=9/12
+  gen  2/10  best=0.753  sol=1.00  ht=0.00  dir=0.672  archive=10/12
+  gen  3/10  best=0.500  sol=0.31  ht=0.06  dir=0.307  archive=10/12
+  gen  4/10  best=0.686  sol=1.00  ht=0.00  dir=0.912  archive=11/12
+  gen  5/10  best=0.724  sol=1.00  ht=0.00  dir=0.817  archive=11/12
+  gen  6/10  best=0.939  sol=1.00  ht=0.00  dir=0.934  archive=12/12
+  gen  7/10  best=0.698  sol=1.00  ht=0.00  dir=0.915  archive=12/12
+  gen  8/10  best=0.744  sol=1.00  ht=0.00  dir=0.669  archive=12/12
+  gen  9/10  best=0.746  sol=1.00  ht=0.00  dir=0.864  archive=12/12
+Traceback (most recent call last):
+  File "D:\Project\PCGNN\.lab\workspace\test_improve2.py", line 362, in <module>
+    print(f"\n\u2705 Smoke test passed in {elapsed:.0f}s")
+  File "C:\Users\Acer\anaconda3\envs\pcgnn\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>

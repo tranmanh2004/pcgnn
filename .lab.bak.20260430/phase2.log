@@ -1,0 +1,12 @@
+[2026-04-27 06:28:59] [phase2] === phase2 START — variants: ['V8', 'V9', 'V10', 'V11'] ===
+[2026-04-27 06:28:59] [phase2] >>> Starting V8
+[2026-04-27 06:59:26] [phase2] <<< V8 OK in 1827s
+[2026-04-27 06:59:26] [phase2] >>> Starting V9
+[2026-04-27 07:25:49] [phase2] <<< V9 OK in 1583s
+[2026-04-27 07:25:49] [phase2] >>> Starting V10
+[2026-04-27 07:48:15] [phase2] <<< V10 OK in 1346s
+[2026-04-27 07:48:15] [phase2] >>> Starting V11
+[2026-04-27 08:10:44] [phase2] <<< V11 OK in 1348s
+[2026-04-27 08:10:44] [phase2] All variants done in 101.7 min
+[2026-04-27 08:10:44] [phase2] Report: D:\Project\PCGNN\.lab\phase2_summary.md
+[2026-04-27 08:10:44] [phase2] === phase2 END ===

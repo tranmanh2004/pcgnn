@@ -1,0 +1,13 @@
+[V11] Inverted: turns weight 1x + combined penalty (low BC pressure)
+[V11] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 1.0]
+[V11] Penalty = combined × 0.4
+[V11] training 30 gen × 50 pop × 8 maps...
+[V11] training done in 1347.6s
+
+[V11] non_l_pattern_rate    = 0.2900
+[V11] solvability           = 1.0000
+[V11] diagonal_stripes_pct  = 9/100
+[V11] near_empty_pct        = 2/100
+[V11] near_full_pct         = 14/100
+[V11] astar_div_pairs_mean  = 0.1124
+[V11] astar_diff_mean       = 0.4508

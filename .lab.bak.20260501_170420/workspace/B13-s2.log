@@ -1,0 +1,27 @@
+[run_barrier] MAX_GEN overridden to 100
+[run_barrier] SEED overridden to 2
+[run_barrier] variant=B13  archive=ht_rate  out=.lab/workspace/B13-s2
+  gen   0/100  archive= 3/12  best=0.812  3s  ETA=0.0m
+  gen  10/100  archive= 5/12  best=0.913  34s  ETA=4.6m
+  gen  20/100  archive= 5/12  best=0.611  66s  ETA=4.1m
+  gen  30/100  archive= 6/12  best=0.613  101s  ETA=3.7m
+  gen  40/100  archive= 6/12  best=0.613  137s  ETA=3.3m
+  gen  50/100  archive= 7/12  best=0.892  173s  ETA=2.8m
+  gen  60/100  archive= 7/12  best=0.929  209s  ETA=2.2m
+  gen  70/100  archive= 7/12  best=0.617  246s  ETA=1.7m
+  gen  80/100  archive= 7/12  best=0.615  283s  ETA=1.1m
+  gen  90/100  archive= 7/12  best=0.613  321s  ETA=0.5m
+
+============================================================
+[B13]  archive=ht_rate  356s  cells=7/12
+  compound_v3        : 0.0445  (PRIMARY: solv x high_tort x dir_bal)
+  compound_v2        : 0.3895  (old: solv x non_l x dir_bal)
+  solvability        : 74.0%
+  high_tort_rate     : 8.0%  (tortuosity>1.5)
+  mean_tortuosity    : 1.110  (L-path=1.0)
+  mean_barrier_rows  : 1.9  (rows with ≥65% wall)
+  non_l_rate         : 70.0%
+  dir_balance        : 0.7519
+  stripe_rate        : 0.2914
+  mean_turns         : 5.9
+

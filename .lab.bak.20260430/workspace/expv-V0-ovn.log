@@ -1,0 +1,13 @@
+[V0] Control: BC 7-dim winner from exp #5 (re-run for sanity)
+[V0] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 7.84]
+[V0] Penalty = None × 0.0
+[V0] training 30 gen × 50 pop × 8 maps...
+[V0] training done in 1336.1s
+
+[V0] non_l_pattern_rate    = 0.8800
+[V0] solvability           = 0.8900
+[V0] diagonal_stripes_pct  = 52/100
+[V0] near_empty_pct        = 67/100
+[V0] near_full_pct         = 5/100
+[V0] astar_div_pairs_mean  = 0.1447
+[V0] astar_diff_mean       = 0.7552

@@ -1,0 +1,13 @@
+[V1] BC + diagonal penalty in fitness
+[V1] BC dim = 7, weights = [1, 1, 1, 1, 1, 1, 7.84]
+[V1] Penalty = diagonal × 0.3
+[V1] training 30 gen × 50 pop × 8 maps...
+[V1] training done in 1565.2s
+
+[V1] non_l_pattern_rate    = 0.2100
+[V1] solvability           = 0.9900
+[V1] diagonal_stripes_pct  = 4/100
+[V1] near_empty_pct        = 55/100
+[V1] near_full_pct         = 4/100
+[V1] astar_div_pairs_mean  = 0.1617
+[V1] astar_diff_mean       = 0.7515

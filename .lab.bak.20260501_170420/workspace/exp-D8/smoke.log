@@ -1,0 +1,20 @@
+ME12-D6 smoke test: 10 gen, 50 pop, 8 maps/genome
+Weights: solve=0.4, intra=0.15, path=0.08, turns=0.02, branch=0.05, ht=0.15, dir=0.05
+Recurrent: feed_forward=False, RecurrentNetwork
+
+  gen  0/10  best=0.343  sol=0.94  ht=0.00  dir=0.800  archive=4/12
+  gen  1/10  best=0.329  sol=0.50  ht=0.00  dir=0.613  archive=6/12
+  gen  2/10  best=0.375  sol=1.00  ht=0.00  dir=0.501  archive=6/12
+  gen  3/10  best=0.439  sol=0.62  ht=0.00  dir=0.300  archive=6/12
+  gen  4/10  best=0.472  sol=0.94  ht=0.00  dir=0.687  archive=6/12
+  gen  5/10  best=0.274  sol=1.00  ht=0.00  dir=0.692  archive=6/12
+  gen  6/10  best=0.656  sol=0.75  ht=0.00  dir=0.542  archive=7/12
+  gen  7/10  best=0.550  sol=0.88  ht=0.00  dir=0.496  archive=7/12
+  gen  8/10  best=0.458  sol=1.00  ht=0.00  dir=0.320  archive=7/12
+  gen  9/10  best=0.552  sol=1.00  ht=0.00  dir=0.458  archive=7/12
+
+   cv3 override: best compound_v3=0.0741 (ht>0 genome selected)
+Smoke test done in 28s
+   Final archive: 7/12 cells
+   Winner nodes=2, conns=15
+   Winner saved: .lab/workspace/test_winner_d7.pkl

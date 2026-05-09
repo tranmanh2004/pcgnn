@@ -34,7 +34,9 @@
       "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME2 .lab/workspace/expme-ME2v3)",
       "Bash(mkdir -p \"d:/Project/PCGNN/.lab/workspace/expme-ME3v3\")",
       "Bash(/c/Users/Acer/anaconda3/envs/pcgnn/python.exe .lab/workspace/run_mapelites.py ME3 .lab/workspace/expme-ME3v3)",
-      "Bash(conda run *)"
+      "Bash(conda run *)",
+      "PowerShell(conda run -n pcgnn python \"D:/Project/PCGNN/.lab/workspace/eval_pkl.py\" \"D:/Project/PCGNN/neat_winner_seed0 \\(10\\).pkl\" 2>&1)",
+      "PowerShell(conda run -n pcgnn python \"D:/Project/PCGNN/.lab/workspace/eval_pkl.py\" \"D:/Project/PCGNN/neat_winner_seed0 \\(11\\).pkl\" 2>&1)"
     ]
   }
 }

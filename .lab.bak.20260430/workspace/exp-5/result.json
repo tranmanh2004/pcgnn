@@ -1,0 +1,35 @@
+{
+  "non_l_pattern_rate": 0.88,
+  "solvability": 0.9,
+  "astar_div": 0.16254033041788143,
+  "astar_diff": 0.7624931175511623,
+  "turns_distribution": {
+    "mean": 10.066666666666666,
+    "histogram": [
+      0,
+      1,
+      8,
+      6,
+      7,
+      0,
+      4,
+      0,
+      19,
+      5
+    ],
+    "histogram_labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "\u22658",
+      "unsolvable"
+    ]
+  },
+  "train_seconds": 2258.2831592559814,
+  "exp_id": "5"
+}

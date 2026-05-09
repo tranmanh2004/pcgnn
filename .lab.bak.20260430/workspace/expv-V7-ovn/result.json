@@ -1,0 +1,31 @@
+{
+  "n_maps": 100,
+  "non_l_pattern_rate": 0.3,
+  "solvability": 1.0,
+  "L_pattern_count": 70,
+  "unsolvable_count": 0,
+  "diagonal_stripes_count": 11,
+  "near_empty_count": 36,
+  "near_full_count": 11,
+  "astar_diff_mean": 0.5244941875574175,
+  "astar_div_pairs_mean": 0.22823809523809524,
+  "wall_density_mean": 0.345,
+  "wall_density_std": 0.2782372588677193,
+  "diag_score_mean": 0.1503229220501465,
+  "turns_histogram": [
+    0,
+    70,
+    1,
+    6,
+    2,
+    1,
+    3,
+    7,
+    10,
+    0
+  ],
+  "variant_id": "V7",
+  "exp_id": "ovn",
+  "description": "BC 10-dim combined + small combined penalty",
+  "train_seconds": 1893.0622873306274
+}
