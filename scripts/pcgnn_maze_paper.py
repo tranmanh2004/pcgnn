@@ -29,6 +29,8 @@ import matplotlib.pyplot as plt
 import neat
 import numpy as np
 
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+
 # ═════════════════════════════════════════════════════════════
 # Paper Maze setup (binary tiles, fixed 14x14, fixed start/goal)
 # ═════════════════════════════════════════════════════════════
@@ -57,9 +59,9 @@ NOVELTY_K = 15    # inter-novelty neighbours (paper Table 9)
 INTRA_K   = 10    # intra-novelty neighbours (paper Table 9)
 LAMBDA    = 0     # archive growth rate (paper Table 9: 0 = never add)
 
-CONFIG_PATH  = "config_pcgnn_maze.txt"
-MODEL_PATH   = "pcgnn_maze_winner.pkl"
-MAP_TXT_DIR  = "saved_maps_maze"
+CONFIG_PATH  = PROJECT_DIR / "configs" / "config_pcgnn_maze.txt"
+MODEL_PATH   = PROJECT_DIR / "models" / "pcgnn_maze_winner.pkl"
+MAP_TXT_DIR  = PROJECT_DIR / "generated_maps" / "saved_maps_maze"
 
 
 # ═════════════════════════════════════════════════════════════
@@ -440,7 +442,7 @@ def train():
         neat.DefaultReproduction,
         neat.DefaultSpeciesSet,
         neat.DefaultStagnation,
-        CONFIG_PATH,
+        str(CONFIG_PATH),
     )
     pop = neat.Population(config)
     reporter = PaperReporter()

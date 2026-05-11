@@ -12,7 +12,8 @@ import neat
 import numpy as np
 
 
-PROJECT_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+SCRIPT_DIR = Path(__file__).resolve().parent
 MPL_CACHE_DIR = PROJECT_DIR / ".matplotlib"
 MPL_CACHE_DIR.mkdir(exist_ok=True)
 os.environ.setdefault("MPLCONFIGDIR", str(MPL_CACHE_DIR))
@@ -407,8 +408,8 @@ def map_to_text(level: np.ndarray) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate maps from a PCGNN genome using the improve-v2.ipynb generator.")
-    parser.add_argument("--checkpoint", default="inctyseed0.pkl")
-    parser.add_argument("--config", default="config-pcgnn.txt")
+    parser.add_argument("--checkpoint", default="models/inctyseed0.pkl")
+    parser.add_argument("--config", default="configs/config-pcgnn.txt")
     parser.add_argument("--out", default="generated_maps/inctyseed0_improve_v2")
     parser.add_argument("--count", type=int, default=50)
     parser.add_argument("--seed", type=int, default=0)
@@ -425,7 +426,7 @@ def main() -> None:
     random.seed(args.seed)
     np.random.seed(args.seed)
 
-    config_path = Path(args.config)
+    config_path = PROJECT_DIR / args.config
     write_improve_v2_config(config_path)
 
     config = neat.Config(
@@ -436,11 +437,12 @@ def main() -> None:
         str(config_path),
     )
 
-    with open(args.checkpoint, "rb") as handle:
+    checkpoint_path = PROJECT_DIR / args.checkpoint
+    with checkpoint_path.open("rb") as handle:
         genome = pickle.load(handle)
 
     net = neat.nn.RecurrentNetwork.create(genome, config)
-    out_dir = Path(args.out)
+    out_dir = PROJECT_DIR / args.out
     out_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
@@ -476,7 +478,7 @@ def main() -> None:
     range_counts = {tier: sum(1 for row in rows if row["range_tier"] == tier) for tier in ("easy", "medium", "hard", "unclassified")}
     percentile_counts = {tier: sum(1 for row in rows if row["percentile_tier"] == tier) for tier in ("easy", "medium", "hard")}
 
-    print(f"checkpoint={args.checkpoint}")
+    print(f"checkpoint={checkpoint_path}")
     print(f"config={config_path}")
     print("generator=improve-v2.ipynb cell 6")
     print(f"maps={args.count}")

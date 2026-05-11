@@ -11,7 +11,7 @@ from pathlib import Path
 import neat
 import numpy as np
 
-PROJECT_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_DIR / "src"
 sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(SRC_DIR / "external" / "gym-pcgrl"))
@@ -76,8 +76,8 @@ def metric_summary(name: str, values) -> dict[str, object]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--checkpoint", default="inctyseed0.pkl")
-    parser.add_argument("--config", default="config-pcgnn.txt")
+    parser.add_argument("--checkpoint", default="models/inctyseed0.pkl")
+    parser.add_argument("--config", default="configs/config-pcgnn.txt")
     parser.add_argument("--out", default="generated_maps/inctyseed0_paper_metrics_14x14_100")
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--seed", type=int, default=0)
@@ -99,7 +99,8 @@ def main() -> None:
         str(config_path),
     )
 
-    with (PROJECT_DIR / args.checkpoint).open("rb") as handle:
+    checkpoint_path = PROJECT_DIR / args.checkpoint
+    with checkpoint_path.open("rb") as handle:
         genome = pickle.load(handle)
     net = neat.nn.RecurrentNetwork.create(genome, config)
 
