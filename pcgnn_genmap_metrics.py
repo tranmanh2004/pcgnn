@@ -341,10 +341,10 @@ def map_metrics(level: np.ndarray) -> dict[str, float | int | bool]:
         astar_difficulty = 1.0
 
     difficulty_score = (
-        0.30 * wall_ratio
-        + 0.35 * min(path_norm, 1.0)
-        + 0.20 * dead_end_ratio
-        + 0.15 * astar_difficulty
+        0.90 * wall_ratio
+        + 0.05 * min(path_norm, 1.0)
+        + 0.03 * dead_end_ratio
+        + 0.02 * astar_difficulty
     )
 
     return {
@@ -366,9 +366,9 @@ def map_metrics(level: np.ndarray) -> dict[str, float | int | bool]:
 
 
 def score_tier(score: float) -> str:
-    if score < 0.35:
+    if score < 0.4:
         return "easy"
-    if score < 0.65:
+    if score < 0.5:
         return "medium"
     return "hard"
 
