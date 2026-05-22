@@ -12,6 +12,8 @@ class GenerateRequest(BaseModel):
     count: int = Field(8, ge=1, le=200)
     seed: int = 0
     perturb: bool = True
+    width: int = Field(14, ge=5, le=64)
+    height: int = Field(14, ge=5, le=64)
 
 
 class MapPayload(BaseModel):
@@ -24,8 +26,8 @@ class GenerateResponse(BaseModel):
     model: ModelName
     count: int
     seed: int
-    height: int = 14
-    width: int = 14
+    height: int
+    width: int
     maps: list[MapPayload]
     summary: dict[str, Any]
 
@@ -34,6 +36,8 @@ class CompareRequest(BaseModel):
     count: int = Field(8, ge=1, le=100)
     seed: int = 0
     perturb: bool = True
+    width: int = Field(14, ge=5, le=64)
+    height: int = Field(14, ge=5, le=64)
 
 
 class CompareResponse(BaseModel):
@@ -49,6 +53,8 @@ class ClassifyRequest(BaseModel):
     count: int = Field(60, ge=10, le=1000)
     seed: int = 0
     perturb: bool = True
+    width: int = Field(14, ge=5, le=64)
+    height: int = Field(14, ge=5, le=64)
     easy_ratio: float = Field(0.05, ge=0.0, le=1.0)
     medium_ratio: float = Field(0.05, ge=0.0, le=1.0)
 

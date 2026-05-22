@@ -32,3 +32,31 @@ doc/*.fls
 .lab/
 run.log
 
+# Node / frontend build artifacts
+**/node_modules/
+**/dist/
+**/.vite/
+**/build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+.yarn/
+
+# Python build / cache
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS
+.idea/
+*.tmp
+Thumbs.db
+
+# Webapp local logs / temp output
+webapp/**/*.log
+

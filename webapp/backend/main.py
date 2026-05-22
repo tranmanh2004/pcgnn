@@ -62,8 +62,15 @@ def _summarize(metrics_list: list[dict[str, Any]]) -> dict[str, Any]:
     return summary
 
 
-def _build_maps(model: str, count: int, seed: int, perturb: bool) -> list[MapPayload]:
-    levels = generate_batch(model, count, seed, perturb=perturb)
+def _build_maps(
+    model: str,
+    count: int,
+    seed: int,
+    perturb: bool,
+    height: int = 14,
+    width: int = 14,
+) -> list[MapPayload]:
+    levels = generate_batch(model, count, seed, height=height, width=width, perturb=perturb)
     out = []
     for index, level in enumerate(levels):
         metrics = level_metrics(level)
@@ -97,7 +104,7 @@ def models_meta() -> dict[str, list[dict[str, str]]]:
 @app.post("/api/generate", response_model=GenerateResponse)
 def generate(req: GenerateRequest) -> GenerateResponse:
     try:
-        maps = _build_maps(req.model, req.count, req.seed, req.perturb)
+        maps = _build_maps(req.model, req.count, req.seed, req.perturb, req.height, req.width)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     summary = _summarize([m.metrics for m in maps])
@@ -105,6 +112,8 @@ def generate(req: GenerateRequest) -> GenerateResponse:
         model=req.model,
         count=req.count,
         seed=req.seed,
+        height=req.height,
+        width=req.width,
         maps=maps,
         summary=summary,
     )
@@ -113,8 +122,12 @@ def generate(req: GenerateRequest) -> GenerateResponse:
 @app.post("/api/compare", response_model=CompareResponse)
 def compare(req: CompareRequest) -> CompareResponse:
     try:
-        baseline_maps = _build_maps("baseline", req.count, req.seed, req.perturb)
-        improved_maps = _build_maps("improved", req.count, req.seed, req.perturb)
+        baseline_maps = _build_maps(
+            "baseline", req.count, req.seed, req.perturb, req.height, req.width
+        )
+        improved_maps = _build_maps(
+            "improved", req.count, req.seed, req.perturb, req.height, req.width
+        )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     return CompareResponse(
@@ -132,7 +145,7 @@ def compare(req: CompareRequest) -> CompareResponse:
 @app.post("/api/classify", response_model=ClassifyResponse)
 def classify(req: ClassifyRequest) -> ClassifyResponse:
     try:
-        base = _build_maps(req.model, req.count, req.seed, req.perturb)
+        base = _build_maps(req.model, req.count, req.seed, req.perturb, req.height, req.width)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 

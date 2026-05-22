@@ -73,7 +73,9 @@ export function generate(req: {
   model: ModelName;
   count: number;
   seed: number;
-  perturb: boolean;
+  width?: number;
+  height?: number;
+  perturb?: boolean;
 }): Promise<GenerateResponse> {
   return postJson("/api/generate", req);
 }
@@ -89,7 +91,9 @@ export interface CompareResponse {
 export function compare(req: {
   count: number;
   seed: number;
-  perturb: boolean;
+  width?: number;
+  height?: number;
+  perturb?: boolean;
 }): Promise<CompareResponse> {
   return postJson("/api/compare", req);
 }
@@ -112,7 +116,9 @@ export function classify(req: {
   model: ModelName;
   count: number;
   seed: number;
-  perturb: boolean;
+  width?: number;
+  height?: number;
+  perturb?: boolean;
   easy_ratio: number;
   medium_ratio: number;
 }): Promise<ClassifyResponse> {

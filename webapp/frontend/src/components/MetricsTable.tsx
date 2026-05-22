@@ -1,3 +1,4 @@
+import { Table, Text } from "@mantine/core";
 import type { Summary } from "../api";
 
 interface Props {
@@ -21,28 +22,34 @@ const FIELDS: { key: keyof Summary; label: string; fmt: (v: number) => string }[
 
 export function MetricsTable({ rows }: Props) {
   return (
-    <table className="metrics-table">
-      <thead>
-        <tr>
-          <th>Chỉ số</th>
+    <Table striped highlightOnHover withTableBorder withColumnBorders verticalSpacing="xs">
+      <Table.Thead>
+        <Table.Tr>
+          <Table.Th>Chỉ số</Table.Th>
           {rows.map((r, i) => (
-            <th key={i} style={{ color: r.accent }}>
-              {r.label}
-            </th>
+            <Table.Th key={i}>
+              <Text c={r.accent} fw={600}>
+                {r.label}
+              </Text>
+            </Table.Th>
           ))}
-        </tr>
-      </thead>
-      <tbody>
+        </Table.Tr>
+      </Table.Thead>
+      <Table.Tbody>
         {FIELDS.map(({ key, label, fmt }) => (
-          <tr key={key as string}>
-            <td>{label}</td>
+          <Table.Tr key={key as string}>
+            <Table.Td>{label}</Table.Td>
             {rows.map((r, i) => {
               const value = r.summary[key];
-              return <td key={i}>{typeof value === "number" ? fmt(value) : "-"}</td>;
+              return (
+                <Table.Td key={i} className="metric-cell">
+                  {typeof value === "number" ? fmt(value) : "-"}
+                </Table.Td>
+              );
             })}
-          </tr>
+          </Table.Tr>
         ))}
-      </tbody>
-    </table>
+      </Table.Tbody>
+    </Table>
   );
 }

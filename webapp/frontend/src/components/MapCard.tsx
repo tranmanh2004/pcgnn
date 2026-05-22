@@ -1,3 +1,5 @@
+import { Card, Group, Badge, Stack, Text } from "@mantine/core";
+import { IconCheck, IconX } from "@tabler/icons-react";
 import type { MapMetrics } from "../api";
 import { MapGrid } from "./MapGrid";
 
@@ -7,22 +9,57 @@ interface Props {
   metrics: MapMetrics;
   tier?: string;
   size?: number;
+  maxPx?: number;
 }
 
-export function MapCard({ index, grid, metrics, tier, size = 14 }: Props) {
+const TIER_COLORS: Record<string, string> = {
+  easy: "green",
+  medium: "yellow",
+  hard: "red",
+  unclassified: "gray",
+};
+
+export function MapCard({ index, grid, metrics, tier, size, maxPx = 196 }: Props) {
   return (
-    <div className="map-card">
-      <div className="header-row">
-        <strong>#{String(index).padStart(3, "0")}</strong>
-        {tier && <span className={`tier-badge ${tier}`}>{tier}</span>}
-      </div>
-      <MapGrid grid={grid} size={size} />
-      <div className="meta">
-        <div>solv: {metrics.solvable ? "✓" : "✗"}</div>
-        <div>wall: {metrics.wall_ratio.toFixed(2)}</div>
-        <div>path: {metrics.shortest_path_length}</div>
-        <div>diff: {metrics.difficulty_score.toFixed(3)}</div>
-      </div>
-    </div>
+    <Card withBorder padding="sm" radius="md" className="map-card-clickable">
+      <Stack gap={8}>
+        <Group justify="space-between" gap="xs">
+          <Text size="sm" fw={600} ff="monospace">
+            #{String(index).padStart(3, "0")}
+          </Text>
+          <Group gap={4}>
+            {tier && (
+              <Badge color={TIER_COLORS[tier] ?? "gray"} variant="light" size="sm">
+                {tier}
+              </Badge>
+            )}
+            <Badge
+              color={metrics.solvable ? "teal" : "red"}
+              variant="light"
+              size="sm"
+              leftSection={
+                metrics.solvable ? <IconCheck size={10} /> : <IconX size={10} />
+              }
+            >
+              {metrics.solvable ? "solv" : "fail"}
+            </Badge>
+          </Group>
+        </Group>
+        <Group justify="center">
+          <MapGrid grid={grid} size={size} maxPx={maxPx} />
+        </Group>
+        <Group justify="space-between" gap="xs">
+          <Text size="xs" c="dimmed" className="metric-cell">
+            wall {metrics.wall_ratio.toFixed(2)}
+          </Text>
+          <Text size="xs" c="dimmed" className="metric-cell">
+            path {metrics.shortest_path_length}
+          </Text>
+          <Text size="xs" c="dimmed" className="metric-cell">
+            diff {metrics.difficulty_score.toFixed(2)}
+          </Text>
+        </Group>
+      </Stack>
+    </Card>
   );
 }
