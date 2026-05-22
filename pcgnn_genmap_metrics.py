@@ -407,7 +407,7 @@ def map_to_text(level: np.ndarray) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate maps from a PCGNN genome using the improve-v2.ipynb generator.")
-    parser.add_argument("--checkpoint", default="inctyseed0.pkl")
+    parser.add_argument("--checkpoint", default="checkpoints/improved/inctyseed0.pkl")
     parser.add_argument("--config", default="config-pcgnn.txt")
     parser.add_argument("--out", default="generated_maps/inctyseed0_improve_v2")
     parser.add_argument("--count", type=int, default=50)

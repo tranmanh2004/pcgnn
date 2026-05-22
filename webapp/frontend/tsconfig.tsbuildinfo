@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/components/mapcard.tsx","./src/components/mapgrid.tsx","./src/components/metricstable.tsx","./src/pages/classifypage.tsx","./src/pages/comparepage.tsx","./src/pages/generatepage.tsx"],"version":"5.9.3"}

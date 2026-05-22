@@ -277,8 +277,8 @@ def render_side_by_side(baseline_levels: list[np.ndarray], improved_levels: list
 
 
 def main() -> None:
-    baseline_path = ROOT / "neat_winner_seed0.pkl"
-    improved_path = ROOT / "inctyseed0.pkl"
+    baseline_path = ROOT / "checkpoints" / "baseline" / "neat_winner_seed0.pkl"
+    improved_path = ROOT / "checkpoints" / "improved" / "inctyseed0.pkl"
 
     baseline_levels = sample_baseline_maps(baseline_path, MAPS_PER_MODEL)
     improved_levels = sample_improved_maps(improved_path, MAPS_PER_MODEL)
